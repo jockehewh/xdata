@@ -26,11 +26,5 @@ module.exports = {
             reecrit.write(JSON.stringify(temp))
             reecrit.end()
         })
-    },
-    save(liste){
-        //fs.unlink('./xcmsDB/XData.db', ()=>{console.log('saving...')})
-        var enregistre = fs.createWriteStream('./xcmsDB/XData.db',{encoding:'utf8'})
-            enregistre.write(JSON.stringify(liste))
-            enregistre.end()
     }
 }
